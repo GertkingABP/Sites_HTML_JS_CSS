@@ -1,0 +1,353 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(0, 5, 53, 0.836);
+}
+
+h1{
+    font-weight: 400px;
+    font-size: 45px;
+    text-align: center;
+    color:#ff096c 
+}
+
+a{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.navbar-brand{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 30px;
+    color: rgb(0, 8, 53);
+}
+
+.navbar-brand:hover{
+    color: #27399A;
+}
+
+button{
+    ruby-align: center;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    position: relative;
+    padding: 15px 30px;
+    border: 1px solid;
+    border-image: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+    border-image-slice: 1;
+    margin: 10px 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 2px;
+    transition: .8s cubic-bezier(.165, .84, .44, 1);
+    z-index: 1;
+    pointer-events: auto;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: smaller;
+}
+
+button:before{
+    content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 0;
+  width: 100%;
+  z-index: -1;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+  transition: .8s cubic-bezier(.165, .84, .44, 1);
+  font-size: smaller;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0);
+}
+
+button:hover:before {
+    bottom: 0%;
+    top: auto;
+    height: 100%;
+}
+
+button:active{
+    background: linear-gradient(180deg, #ff3000, #ed0200, #ff096c, #d50082);
+}
+
+.btn-primary{
+    margin-right: 15px;
+    border-bottom:white
+}
+
+.btn-secondary{
+    margin-right: 35px;
+}
+
+.btn-clean{
+background-color: rgba(22, 32, 121, 0.836); 
+}
+
+div{
+    text-align: center;
+    font-size: 17px;
+}
+
+.page{
+    position: relative;
+    height: 100vh;
+}
+
+.page-promo{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.main-picture-1 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-picture-2 {
+    background-image: url('https://images.hdqwalls.com/download/low-poly-abstract-artwork-4k-ns-3840x2400.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.main-picture-3 {
+    background-image: url('https://imagesbase.ru/uploads/posts/2018-07/1531765670_imagesbase.ru.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 106vh;
+}
+
+.page-content{
+    height: 106vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    bottom: 0;
+    right: 0;
+    color: white;
+    padding: 5%;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.page-content-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    color: white;
+    padding: 5%;
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.promo{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    text-align: center;
+
+}
+
+.services{
+    display: grid;
+    margin-top: 2rem;
+    --cols-num: 4;
+    grid-template-columns: repeat(var(--cols-num), 230px);
+    grid-template-rows: auto;
+    column-gap: 1rem;
+    row-gap: 1rem;
+}
+
+.services-card{
+    height: 360px;
+    box-shadow: 0 2px 20px rgb(0 0 0 / 30%);
+    border-radius: 20px;
+    background:#6a808893
+}
+
+.services-card:hover{
+    box-shadow: 0 2px 20px  20px rgb(90 60 70 / 135%);
+}
+ 
+.img{
+    padding: 20px;
+    width: 230px;
+    height: 150px;
+    border-radius: 30px;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 4px;
+    color:#ff096c
+}
+
+h3{
+    color:#ff096c  
+}
+
+.page-content p{
+    text-align: center;
+}
+
+.main-menu{
+    color: #27399A;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(237, 236, 255, 0.897);
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+.menu-list{
+    display: flex;
+    gap: 2em;
+    margin: 0;
+}
+
+.menu-list a{
+    text-decoration: none;
+    color: rgb(0, 8, 53);
+}
+
+.menu-list a:hover{
+    text-decoration: none;
+    color: #27399A;
+}
+
+.menu-list li{
+    list-style-type: none;
+    padding-top: 13px;
+}
+
+.bi-list{
+    display: none;
+
+}
+
+@media(min-width: 577px) and (max-width: 992px){
+    .services{
+        --cols-num: 2;
+    } 
+    
+    .page-promo{
+        height: 900px;
+    }
+
+    .main-picture-2{
+        height: 900px;
+    }
+}
+
+@media (max-width: 576px){
+    .main-menu{
+        flex-wrap: wrap;
+    }
+
+    .bi-list{
+        display: block;
+        width: 1.5rem;
+        height: 1.5rem;
+        cursor: pointer;
+    }
+
+    .menu-list{
+        --menu-li-height: 1rem;
+        --menu-li-gap: .5rem;
+        --menu-elems-num: 4;
+        width: 100%;
+        height: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--menu-li-height);
+        margin-top: 5px;
+        padding: 0;
+        overflow: hidden;
+        transition: height .5s;
+    }
+
+    .menu-list.show{
+        height: calc((var(--menu-li-height) + var(--menu-li-gap)) * var(--menu-elems-num));
+    }
+
+    .menu-list li{
+        height: var(--menu-li-height);
+    }
+
+    .page-promo{
+        height: 1650px;
+    }
+
+    .main-picture-2{
+        height: 1650px;
+    }
+
+    .services{
+        --cols-num: 1;
+    }
+}
+
+body {
+    margin: 0;
+    font: normal 75% Arial, Helvetica, sans-serif;
+  }
+  canvas {
+    display: block;
+    vertical-align: bottom;
+  }
+
+  #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 8, 53);
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: 1;
+  } 
